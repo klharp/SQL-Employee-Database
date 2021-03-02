@@ -1,10 +1,3 @@
-
--- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- Link to schema: https://app.quickdatabasediagrams.com/#/d/TViLVb
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
-
--- sql homework ERD
-
 CREATE TABLE "titles" (
     "title_id" VARCHAR(255)   NOT NULL,
     "title" VARCHAR(255)   NOT NULL,
