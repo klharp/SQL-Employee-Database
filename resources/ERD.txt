@@ -1,0 +1,36 @@
+#sql homework ERD
+
+titles
+-
+title_id INT PK
+title VARCHAR(255)
+
+salaries
+-
+emp_no INT FK >- employees.emp_no
+salary INT
+
+employees
+-
+emp_no  INT PK
+emp_title_id INTEGER FK >- titles.title_id
+birth_date DATE
+first_name VARCHAR(255)
+last_name VARCHAR(255)
+sex VARCHAR(255)
+hire_date DATE
+
+dept_manager
+-
+dept_no INT FK >- departments.dept_no
+emp_no INT FK >- employees.emp_no
+
+dept_emp
+-
+emp_no INT FK >- employees.emp_no
+dept_no INT FK >- departments.dept_no
+
+departments
+-
+dept_no VARCHAR(255) PK
+dept_name VARCHAR(255)
