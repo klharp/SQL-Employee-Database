@@ -17,7 +17,8 @@ After inspecting the CSVs, an ERD diagram was developed to show the relationship
 A table schema wiwth each of the six CSV files, specifying data types, primary keys, foreign keys, and other constraints was created and data from each of the CSV files was imported (schema.sql).
 
 ### Data Analysis
-With tables all configured, the data was analyzed (query.sql):
+
+With tables all configured, the data was analyzed. Testing and development of the queries done in a file titled, query_testing.sql and the final queries in the file, query.sql:
 
 1. Listing the following details of each employee: employee number, last name, first name, sex, and salary.
 
@@ -37,35 +38,24 @@ With tables all configured, the data was analyzed (query.sql):
 
 ## Bonus (Optional)
 
-As you examine the data, you are overcome with a creeping suspicion that the dataset is fake. You surmise that your boss handed you spurious data in order to test the data engineering skills of a new employee. To confirm your hunch, you decide to take the following steps to generate a visualization of the data, with which you will confront your boss:
+SQL databasewas imported into Pandas for further analysis. The Jupyter Notebook file, sql_bonus.ipynb, contains the following:
 
-1. Import the SQL database into Pandas. (Yes, you could read the CSVs directly in Pandas, but you are, after all, trying to prove your technical mettle.) This step may require some research. Feel free to use the code below to get started. Be sure to make any necessary modifications for your username, password, host, port, and database name:
+1. The imported database (SQL_homework, db).
 
-   ```sql
-   from sqlalchemy import create_engine
-   engine = create_engine('postgresql://localhost:5432/<your_db_name>')
-   connection = engine.connect()
-   ```
+2. A histogram to visualize the most common salary ranges for employees.
 
-* Consult [SQLAlchemy documentation](https://docs.sqlalchemy.org/en/latest/core/engines.html#postgresql) for more information.
+3. A bar chart of average salary by title.
 
-* If using a password, do not upload your password to your GitHub repository. See [https://www.youtube.com/watch?v=2uaTPmNvH0I](https://www.youtube.com/watch?v=2uaTPmNvH0I) and [https://help.github.com/en/github/using-git/ignoring-files](https://help.github.com/en/github/using-git/ignoring-files) for more information.
+4. Details of employee with badge number 499942.
 
-2. Create a histogram to visualize the most common salary ranges for employees.
-
-3. Create a bar chart of average salary by title.
-
-## Epilogue
-
-Evidence in hand, you march into your boss's office and present the visualization. With a sly grin, your boss thanks you for your work. On your way out of the office, you hear the words, "Search your ID number." You look down at your badge to see that your employee ID number is 499942.
 
 ## Submission
 
-* Create an image file of your ERD.
+* Image files of ERD in the Resources Folder.
 
-* Create a `.sql` file of your table schemata.
+* A `.sql` file of your table schema (schema.sql).
 
-* Create a `.sql` file of your queries.
+* A `.sql` file of your queries (queries.sql).
 
-* (Optional) Create a Jupyter Notebook of the bonus analysis.
+* A Jupyter Notebook of the bonus analysis (sql_bonus.ipynb).
 

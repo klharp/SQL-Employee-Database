@@ -33,7 +33,7 @@ FROM departments
 lEFT JOIN dept_emp
 ON dept_emp.dept_no = departments.dept_no
 LEFT JOIN employees
-ON employees.emp_no = dept_emp.emp_no ;
+ON employees.emp_no = dept_emp.emp_no;
 
 -- List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
 -- Use wildcard to get the "B" with uses with AND for the first name
@@ -70,7 +70,7 @@ WHERE departments.dept_name = 'Sales' OR departments.dept_name = 'Development';
 -- In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 -- https://stackoverflow.com/questions/48626812/postgresql-find-duplicates-in-column-with-id (not what I wanted)
 -- Use count and groupings. Counting and grouping  (class demo 2-2, 3 & 4) on emloyee.last_name
-SELECT last_name, COUNT(*) AS "duplicate_last_names"
+SELECT last_name, COUNT(*) AS "number_of_duplicates"
 FROM employees
 GROUP BY last_name
-ORDER BY "duplicate_last_names" DESC;
+ORDER BY "number_of_duplicates" DESC;

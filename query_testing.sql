@@ -120,11 +120,11 @@ SELECT last_name, COUNT(*)
 FROM employees
 GROUP BY last_name; --need to name the count column
 
-SELECT last_name, COUNT(*) AS "duplicate_last_names"
+SELECT last_name, COUNT(*) AS "number_of_duplicates"
 FROM employees
 GROUP BY last_name; --need determine decscending order (class 2-4)
 
-SELECT last_name, COUNT(*) AS "duplicate_last_names"
+SELECT last_name, COUNT(*) AS "number_of_duplicates"
 FROM employees
 GROUP BY last_name
-ORDER BY "duplicate_last_names" DESC;
+ORDER BY "number_of_duplicates" DESC;
