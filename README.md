@@ -2,23 +2,24 @@
 
 ### Background
 
-This homework consisted of modeling and analyzing data in the provided 6 CSVs, import the CSVs into a SQL database, and answer questions about the data.
+This homework consisted of modeling and analyzing data in the provided 6 CSVs, importing the CSVs into a SQL database, and answering questions about the data.
 
 
 ### Data Modeling
 
 After inspecting the CSVs, an ERD diagram was developed to show the relationships between the sets of data.
+
 <img src="resources/ERD_diagram.png" alt="ERD Diagram">
 
-<img src="resources/ERD_text.png" alt="ERD Text">
+<img src="resources/ERD_text.png" alt="ERD Text" width=350px>
 
 ### Data Engineering
 
-A table schema wiwth each of the six CSV files, specifying data types, primary keys, foreign keys, and other constraints was created and data from each of the CSV files was imported (schema.sql).
+A table schema with each of the six CSV files, specifying data types, primary keys, foreign keys, and other constraints was created and data from each of the CSV files was imported (`schema.sql`).
 
 ### Data Analysis
 
-With tables all configured, the data was analyzed. Testing and development of the queries done in a file titled, query_testing.sql and the final queries in the file, query.sql:
+With tables all configured, the data was analyzed. Testing and development of the queries done in a file titled, `query_testing.sql`, The final queries in the file, `queries.sql` display information for the following:
 
 1. Listing the following details of each employee: employee number, last name, first name, sex, and salary.
 
@@ -34,13 +35,13 @@ With tables all configured, the data was analyzed. Testing and development of th
 
 7. Listing all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 
-8. Listing, ind decending order, the frequency count of employee last names, i.e., how many employees share each last name.
+8. Listing, in decending order, the frequency count of employee last names, i.e., how many employees share each last name.
 
-## Bonus (Optional)
+## Bonus
 
-SQL databasewas imported into Pandas for further analysis. The Jupyter Notebook file, sql_bonus.ipynb, contains the following:
+SQL database was imported into Pandas for further analysis. The Jupyter Notebook file, `sql_bonus.ipynb`, contains the following:
 
-1. The imported database (SQL_homework, db).
+1. The imported database (`SQL_homework_db`).
 
 2. A histogram to visualize the most common salary ranges for employees.
 
@@ -53,9 +54,9 @@ SQL databasewas imported into Pandas for further analysis. The Jupyter Notebook 
 
 * Image files of ERD in the Resources Folder.
 
-* A `.sql` file of your table schema (schema.sql).
+* A `.sql` file of your table schema (`schema.sql`).
 
-* A `.sql` file of your queries (queries.sql).
+* A `.sql` file of your queries `(queries.sql`).
 
-* A Jupyter Notebook of the bonus analysis (sql_bonus.ipynb).
+* A Jupyter Notebook of the bonus analysis (`sql_bonus.ipynb`).
 
