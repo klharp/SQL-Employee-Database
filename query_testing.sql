@@ -1,22 +1,16 @@
--- This file contains the final query code. Development and testing was done in the file query_testing.sql
-
--- List the following details of each employee: employee number, last name, first name, sex, and salary.
-SELECT employees.emp_no, employees.last_name, employees.first_name, employees.sex, salaries.salary
-FROM employees
-LEFT JOIN salaries
-ON salaries.emp_no = employees.emp_no;
-
-
--- List first name, last name, and hire date for employees who were hired in 1986.
--- https://www.postgresqltutorial.com/postgresql-between/
-SELECT employees.first_name, employees.last_name, employees.hire_date 
-FROM employees
-WHERE hire_date BETWEEN '1986/1/1' AND '1986/12/31';
-
-
 -- List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
 -- Use join (class demo 2-9), departments <- dept_manager on primary key dept_no, dept_manager <- employees on primary key emp_no the get the names.
 -- Did the 2 joins separately to make sure it worked and then put them together. Could this be a set up as a subquery?
+SELECT departments.dept_no, departments.dept_name
+FROM departments
+lEFT JOIN dept_manager
+ON dept_manager.dept_no = departments.dept_no;
+
+SELECT employees.first_name, employees.last_name, dept_manager.emp_no
+FROM dept_manager
+LEFT JOIN employees
+ON employees.emp_no = dept_manager.emp_no ;
+
 SELECT departments.dept_no, departments.dept_name, employees.first_name, employees.last_name, dept_manager.emp_no
 FROM departments
 lEFT JOIN dept_manager
@@ -28,12 +22,25 @@ ON employees.emp_no = dept_manager.emp_no ;
 -- List the department of each employee with the following information: employee number, last name, first name, and department name.
 -- Use join (class demo 2-9), departments <- dept_emp on primary key dept_no, dept_empr <- employees on primary key emp_no the get the employee number and names.
 -- Did the 2 joins separately to make sure it worked and then put them together. Could this be a set up as a subquery?
+SELECT departments.dept_name, dept_emp.emp_no
+FROM departments
+lEFT JOIN dept_emp
+ON dept_emp.dept_no = departments.dept_no;
+
+SELECT employees.first_name, employees.last_name
+FROM dept_emp
+LEFT JOIN employees
+ON employees.emp_no = dept_emp.emp_no ;
+
 SELECT departments.dept_name, dept_emp.emp_no, employees.first_name, employees.last_name
 FROM departments
 lEFT JOIN dept_emp
 ON dept_emp.dept_no = departments.dept_no
 LEFT JOIN employees
 ON employees.emp_no = dept_emp.emp_no ;
+
+
+
 
 -- List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
 
