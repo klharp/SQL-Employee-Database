@@ -11,7 +11,7 @@ After inspecting the CSVs, an ERD diagram was developed to show the relationship
 
 <img src="resources/ERD_diagram.png" alt="ERD Diagram">
 
-<img src="resources/ERD_text.png" alt="ERD Text" width=350px>
+<img src="resources/ERD_text.png" alt="ERD Text" width=400px>
 
 ### Data Engineering
 
