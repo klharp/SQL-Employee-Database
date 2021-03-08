@@ -54,9 +54,9 @@ SQL database was imported into Pandas for further analysis. The Jupyter Notebook
 
 * Image files of ERD in the Resources Folder.
 
-* A `.sql` file of your table schema (`schema.sql`).
+* A `.sql` file of the table schema (`schema.sql`).
 
-* A `.sql` file of your queries `(queries.sql`).
+* A `.sql` file of the queries (`queries.sql`).
 
 * A Jupyter Notebook of the bonus analysis (`sql_bonus.ipynb`).
 

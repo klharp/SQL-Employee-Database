@@ -7,11 +7,13 @@ LEFT JOIN salaries
 ON salaries.emp_no = employees.emp_no;
 
 
+
 -- List first name, last name, and hire date for employees who were hired in 1986.
 -- https://www.postgresqltutorial.com/postgresql-between/
 SELECT employees.first_name, employees.last_name, employees.hire_date 
 FROM employees
 WHERE hire_date BETWEEN '1986/1/1' AND '1986/12/31';
+
 
 
 -- List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
