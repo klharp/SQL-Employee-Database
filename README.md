@@ -1,9 +1,17 @@
 # SQL Homework - Employee Database: A Mystery in Two Parts
 
-### Background
+## Project Overview
+This project consisted of creating a table schema of the provided 6 CSV files, importing these files into a SQL database, and answering questions about the data.
 
-This homework consisted of modeling and analyzing data in the provided 6 CSVs, importing the CSVs into a SQL database, and answering questions about the data.
+Languages and libraries used:
 
+* SQL
+* Pandas
+* Numpy
+* Matplotlib
+* SciPy
+
+---
 
 ### Data Modeling
 
