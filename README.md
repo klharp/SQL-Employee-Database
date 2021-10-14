@@ -1,4 +1,4 @@
-# SQL Homework - Employee Database: A Mystery in Two Parts
+# Employee Database: A Mystery in Two Parts
 
 ## Project Overview
 This project consisted of creating a table schema of the provided 6 CSV files, importing these files into a SQL database, and answering questions about the data.
@@ -58,13 +58,5 @@ SQL database was imported into Pandas for further analysis. The Jupyter Notebook
 4. Details of employee with badge number 499942.
 
 
-## Submission
 
-* Image files of ERD in the Resources Folder.
-
-* A `.sql` file of the table schema (`schema.sql`).
-
-* A `.sql` file of the queries (`queries.sql`).
-
-* A Jupyter Notebook of the bonus analysis (`sql_bonus.ipynb`).
 
